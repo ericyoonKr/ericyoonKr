@@ -1,16 +1,18 @@
-## Hi there 👋
+Dankook University 2015~2020, B.S Law 
+Dankook University 2024~ , Undergraduate Student
 
-<!--
-**ericyoonKr/ericyoonKr** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Youtube channel Lemonade4Seoul (2022~2024), currently closed channel
+  - Camera, IT Devices, Photo Shooting and Edit tips 
 
-Here are some ideas to get you started:
+Currently interested in 
+  1. Raspberry Pi & ML (edge device ai)
+  2. RocksDB (a key-value database)
+  3. Little bit of satellites and some spacecrafts
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Mostly focus on C/C++ and Python
+
+I admire Terry Davis, the founder of Temple OS.
+
+
+
+I use Arch btw
