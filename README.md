@@ -1,4 +1,5 @@
 Dankook University 2015~2020, B.S Law 
+
 Dankook University 2024~ , Undergraduate Student
 
 Youtube channel Lemonade4Seoul (2022~2024), currently closed channel
