@@ -1,154 +1,67 @@
-<!-- Header -->
-<div align="center">
+# Hi, I'm Chiho Eric Yoon 👋
 
-```
-╔══════════════════════════════════════════════════════════════╗
-║          FORMAL-LEGAL-VERIFIER :: SYSTEM INITIALIZED         ║
-║          SMT-based Computational Law Engine  v0.1α           ║
-╚══════════════════════════════════════════════════════════════╝
-```
+I'm a software engineer with a dual background in **Law (LL.B.)** and **Software Engineering**
 
-# `⊢ assert(justice == deterministic)`
-
-**Computational Law Engineer** · **Formal Methods Researcher** · **Legal System Debugger**
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=14&pause=1000&color=00FF41&background=00000000&center=true&vCenter=true&width=600&lines=LLM+%E2%86%92+Probability+%7C+SMT+Solver+%E2%86%92+Mathematical+Certainty;Eliminating+hallucinations+through+formal+proof.;Jurisprudence+%E2%88%A9+Systems+Programming+%E2%89%A0+%E2%88%85)](https://git.io/typing-svg)
-
-</div>
+My core belief: legal reasoning shouldn't be probabilistic — it should be **mathematically provable**.
 
 ---
 
-## `// whoami`
+## What I'm Building
 
-```c
-typedef struct {
-    char  degree_1[]   = "B.S. Law (LL.B.) — Dankook University (2015–2020)";
-    char  degree_2[]   = "B.S. Software — Dankook University (2024–present)";
-    char  focus[]      = "Formal Methods-based Computational Law";
-    char  mission[]    = "Transitioning legal reasoning: Probability → Mathematical Deduction";
-    bool  arch_user    = true;  // btw
-} Engineer;
-```
+### 🔬 Formal-Legal-Verifier
+An **SMT-based computational law engine** that verifies the logical consistency between statutes and judicial verdicts using the **Z3 SMT Solver**.
 
----
+The fundamental problem with current LLM-based legal AI is what I call the **Gettier Problem in Legal AI** — a system can reach the *correct verdict* through *incorrect reasoning*. In law, accidental correctness isn't justice.
 
-## `// research_problem`
+My approach is to move legal reasoning from the domain of **probability** (LLMs) into the domain of **mathematical deduction** (formal verification).
 
-> **Current LLM-based legal AI is fundamentally broken.**
+### How it works
 
-Modern legal AI suffers from the **Gettier Problem** — arriving at *correct conclusions* through *flawed reasoning*. In a court of law, **accidental correctness is not justice**.
+**Step 1 — Translate (Neural)**
+An LLM acts as a frontend compiler, converting unstructured legal language — statutes, precedents, verdicts — into formal SMT-LIB specifications.
 
-```
-           LLM-based Legal AI
-           ┌─────────────────────┐
-  statute ─►  P(verdict | law)   ├─► ⚠️  Probable answer
-           └─────────────────────┘       (hallucination risk)
+**Step 2 — Verify (Symbolic)**
+The Z3 SMT Solver takes those specifications and checks for logical consistency: Are there contradictions between the statute and the verdict? Does the verdict necessarily follow from the law? If not, *why* — and where exactly does the logic break?
 
-           Formal-Legal-Verifier
-           ┌─────────────────────┐
-  statute ─►  Z3 SMT Solver      ├─► ✓  Proven answer
-  verdict ─►  (SAT / UNSAT)      │      (mathematically certified)
-           └─────────────────────┘
-```
+**Step 3 — Result**
+Either the legal reasoning is formally verified, or the system surfaces the exact **UNSAT core** — the precise logical conflict that makes the argument invalid.
 
-**Objective:** Engineer a *Legal Debugger* — a system that does not *predict* law, but **proves** it.
+The goal is a ***legal debugger***: a tool that doesn't predict what the law says, but **proves** it.
 
 ---
 
-## `// architecture :: neuro_symbolic_pipeline`
+## Research Interest
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                  FORMAL-LEGAL-VERIFIER                  │
-│                                                         │
-│  ┌──────────────────┐       ┌──────────────────────┐   │
-│  │  TRANSLATOR      │       │  JUDGE               │   │
-│  │  (Neural Layer)  │──────►│  (Symbolic Layer)    │   │
-│  │                  │       │                      │   │
-│  │  LLM as a        │       │  Z3 SMT Solver       │   │
-│  │  Frontend        │       │  Backend Engine      │   │
-│  │  Compiler        │       │                      │   │
-│  │                  │       │  · SAT/UNSAT check   │   │
-│  │  Natural Lang    │       │  · Conflict detect   │   │
-│  │    ↓             │       │  · Entailment proof  │   │
-│  │  SMT-LIB Spec    │       │  · UNSAT Core dump   │   │
-│  └──────────────────┘       └──────────────────────┘   │
-│                                        │                │
-│                              ┌─────────▼──────────┐    │
-│                              │  RESULT             │    │
-│                              │  100% Verifiable    │    │
-│                              │  Legal Logic  ✓     │    │
-│                              └─────────────────────┘    │
-└─────────────────────────────────────────────────────────┘
-```
+**Formal Methods-based Computational Law**
+
+Specifically, I'm exploring:
+- Encoding normative legal logic into SMT-LIB
+- Eliminating linguistic ambiguity in statutes through formal symbolic representation
+- Building a neuro-symbolic pipeline where LLMs handle the messy natural language layer, and formal solvers handle the proof layer
 
 ---
 
-## `// current_projects`
+## Background
 
-| Project | Description | Status |
-|---|---|---|
-| **Formal-Legal-Verifier** | SMT-based engine verifying logical consistency between judicial precedents and statutory law | 🔨 In Development |
-| **Legal-to-SMT Framework** | Eliminating linguistic ambiguity in statutes via formal encoding & symbolic representation | 🔬 Research |
+- **B.S. Law (LL.B.)** — Dankook University, 2015–2020
+- **B.S. Software Engineering** — Dankook University, 2024–present
 
----
-
-## `// tech_stack`
-
-<div align="center">
-
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
-
-</div>
-
-```
-Logic & Verification     │  Z3 SMT Solver · SMT-LIB · Formal Methods
-                         │  Static Analysis · Symbolic Execution
-─────────────────────────┼──────────────────────────────────────────
-Domain Expertise         │  Jurisprudence (LL.B.) · Legal Reasoning
-                         │  Regulatory Compliance · Normative Logic
-─────────────────────────┼──────────────────────────────────────────
-Systems                  │  C/C++ · Memory Management · Low-level I/O
-─────────────────────────┼──────────────────────────────────────────
-OS                       │  Arch Linux (btw)
-```
+The law degree wasn't a detour. Understanding how legal arguments are actually constructed — how statutes interact, how courts reason — is what makes the formalization problem tractable.
 
 ---
 
-## `// core_thesis`
+## Tech Stack
 
-```smt
-; Legal reasoning is a satisfiability problem.
-; A just verdict must be provably entailed by statute — not merely predicted.
+**Languages:** C, C++, Python
 
-(declare-const statute          Bool)
-(declare-const verdict          Bool)
-(declare-const logical_conflict Bool)
+**Formal Methods:** Z3 SMT Solver, SMT-LIB, Symbolic Execution, Static Analysis
 
-(assert (=> statute verdict))                  ; statute entails verdict
-(assert (not logical_conflict))                ; no contradiction exists
+**Domain:** Jurisprudence, Legal Reasoning, Normative Logic, Regulatory Compliance
 
-(check-sat)
-; sat → Justice is formally verified. ✓
-; unsat → The system has found a legal bug. ⚠
-```
+**OS:** **Arch Linux (btw)**
 
 ---
 
-## `// contact`
+## Get in Touch
 
-```
-∀ x. (interested_in(x, computational_law) ∨ interested_in(x, formal_methods))
-   → welcome_to_collaborate(x) = true
-```
-
-<div align="center">
-
-*Building the infrastructure for deterministic justice — one proof at a time.*
-
-`$ uname -a` → `Arch Linux | Law × Code | ⊢ QED`
-
-</div>
+If you're working on computational law, formal verification, or neuro-symbolic AI — I'd genuinely love to talk.
